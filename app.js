@@ -35,7 +35,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 //////////////////////////
 const uri = process.env.MONGO_URI;
-mongoose.connect("mongodb+srv://admin-ankit:ankit9782@cluster0.8omox.mongodb.net/blogDB", {useNewUrlParser: true, useUnifiedTopology: true,useCreateIndex: true});
+mongoose.connect("mongodb+srv://admin-ankit:"password"@cluster0.8omox.mongodb.net/blogDB", {useNewUrlParser: true, useUnifiedTopology: true,useCreateIndex: true});
 //////////user schema
 const userSchema = new mongoose.Schema ({
   email: String,
