@@ -76,8 +76,8 @@ const Post = mongoose.model("Post", postSchema);
 ////////GOOGLE STRATEGEY and FACEBOOK STARATEGY////////////////////////
 
 passport.use(new GoogleStrategy({
-  clientID: "887677183146-1hbpqmq73mrrmiv7jedc5mnkmui10t76.apps.googleusercontent.com",
-  clientSecret: "ReUp2hoN1qFHf31tc-oWcKIh",
+  clientID: "clientid",
+  clientSecret: "clientsecret",
   callbackURL: "http://localhost:3000/auth/google/compose",
   userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
 },
